@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "address-book"
+version = "0.1.0"
+description = "A Tkinter + SQLite desktop Address Book"
+readme = "README.md"
+authors = [{ name = "Mobin Yousefi", email = "" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []  # Tkinter & sqlite3 are stdlib
+
+[project.urls]
+Homepage = "https://github.com/your-username/address-book"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5.0",
+  "black>=24.3.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["address_book"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

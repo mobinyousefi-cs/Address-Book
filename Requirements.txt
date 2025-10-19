@@ -1,0 +1,2 @@
+# Runtime deps are stdlib (tkinter, sqlite3). This file is for parity with your repo template.
+# Dev tooling is installed via extras: pip install -e .[dev]
